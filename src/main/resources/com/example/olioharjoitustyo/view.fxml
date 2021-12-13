@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.olioharjoitustyo.controllers.ViewController">
+<top>
+    <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+                <items>
+                    <MenuItem fx:id="saveTheFile" mnemonicParsing="false" onAction="#saveTheFileButton" text="Save the file" />
+                    <MenuItem fx:id="loadTheFile" mnemonicParsing="false" onAction="#loadTheFileButton" text="Load the file" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <items>
+                    <MenuItem fx:id="helpAbout" mnemonicParsing="false" onAction="#aboutButton" text="About" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+</top>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+          <Button alignment="CENTER" layoutX="162.0" layoutY="121.0" mnemonicParsing="false" onMouseClicked="#openChoiceWindow" prefHeight="92.0" prefWidth="275.0" text="Start Expense Tracker" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutY="46.0" prefHeight="17.0" prefWidth="600.0" text="Welcome this is expense tracker" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="5.0" layoutY="74.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="600.0" text="By Jere Korhonen" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
